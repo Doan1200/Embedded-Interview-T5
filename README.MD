@@ -182,6 +182,19 @@ ptr = (uint8_t*)realloc(ptr, sizeof(uint8_t)*7);
 
  >**XOR:** Ký hiệu "^" Bit **a = b == 1** bit **a!= b == 1**
 
+**Ví dụ:**
+
+``` sh
+AND
+
+| A | B | A&B |
+|---|---|-----|
+| 0 | 0 | 0 |
+| 0 | 1 | 0 |
+| 1 | 0 | 0 |
+| 1 | 1 | 1 |
+```
+
 **Dịch bit**
 
 >Dịch trái: <<
