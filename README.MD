@@ -366,6 +366,32 @@ int main(int argc, const char* argv[])
 
 >Khi muốn lấy giá trị thì ta phải ép kiểu dữ liệu tương ứng
 
+**Ví dụ**
+
+``` cpp
+int main(int argc, const char* argv[])
+{
+    int i = 5;
+
+    char c = 'c';
+
+    double d = 15.6;
+
+    void *ptr = &i;
+
+    printf("i = %d\n", *(int *)ptr);
+
+    ptr = &d;
+
+    printf("i = %d\n", *(double *)ptr);
+
+    ptr = &c;
+
+    printf("i = %d\n", *(char *)ptr);
+
+    return 0;
+}
+```
 
 
 **4. Pointer to Pointer**
