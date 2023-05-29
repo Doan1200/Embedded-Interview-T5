@@ -65,41 +65,41 @@ Giai đoạn này sẽ thực hiện:
 
 - **Text**:
 
-    - Quyền truy cập: **Read** và nó chưa lệnh để thực thi nên tránh sửa đổi instruction
+>Quyền truy cập: **Read** và nó chưa lệnh để thực thi nên tránh sửa đổi instruction
 
-    - Chứa khai báo **hằng** số trong chương trình (.rodata)
+>Chứa khai báo **hằng** số trong chương trình (.rodata)
 
 - **DATA**
 
-    - Quyền truy cập: **Read - Write**
+>Quyền truy cập: **Read - Write**
 
-    - Chứa biến **toàn cục or static != 0**
+>Chứa biến **toàn cục or static != 0**
 
-    - Được giải phóng khi kết thúc chương trình
+>Được giải phóng khi kết thúc chương trình
 
 - **BSS**
 
-    - Quyền truy cập: **Read - Write**
+>Quyền truy cập: **Read - Write**
 
-    - Chứa biến **toàn cục or static == 0**
+>Chứa biến **toàn cục or static == 0**
 
-    - Được giải phóng khi kết thúc chương trình
+>Được giải phóng khi kết thúc chương trình
 
 - **Stack**
 
-    - Quyền truy cập: **Read - Write**
+>Quyền truy cập: **Read - Write**
 
-    - Được sử dụng cấp phát cho **biến local, input parameter của hàm,..**
+>Được sử dụng cấp phát cho **biến local, input parameter của hàm,..**
 
-    - Được giải phóng khi ra khỏi block code/ hàm
+>Được giải phóng khi ra khỏi block code/ hàm
 
 - **HEAP**
 
-    - Quyền truy cập: **Read - Write**
+>Quyền truy cập: **Read - Write**
 
-    - Được dùng để cấp phát bộ nhớ động Malloc, Calloc,...
+>Được dùng để cấp phát bộ nhớ động Malloc, Calloc,...
 
-    - Được giải phóng khi được gọi hàm **free,...**
+>Được giải phóng khi được gọi hàm **free,...**
 
 **Stack và Heap**
 
@@ -110,6 +110,16 @@ Giai đoạn này sẽ thực hiện:
 >Bộ nhớ **Heap** được dùng để lưu trũ vùng nhớ cho những biến con trỏ được **cấp phát động** bởi các hàm Malloc, Calloc, Realloc (Trong C)
 
 
+**Kích thước vùng nhớ**
 
+>Stack: Cố định
+
+>Heap: Không cố định, có thể tăng giảm do đó đáp ứng được nhu cầu lưu trữ dữ liệu
+
+**Đặc điểm vùng nhớ**
+
+>Stack: Quản lý bởi hệ điều hành, dữ liệu trong stack sẽ tự động hủy khi hàm thực hiện xong chương trình
+
+>Heap: Không bị hủy khi hàm thực hiện xong, sử dụng free (trong C), delete hoặc delete[] (trong C++) để giải phóng bộ nhớ
 
 
