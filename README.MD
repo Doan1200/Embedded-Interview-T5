@@ -118,8 +118,30 @@ Giai đoạn này sẽ thực hiện:
 
 **Đặc điểm vùng nhớ**
 
->Stack: Quản lý bởi hệ điều hành, dữ liệu trong stack sẽ tự động hủy khi hàm thực hiện xong chương trình
+>Stack: Quản lý bởi hệ điều hành, dữ liệu trong stack sẽ **tự động hủy** khi hàm thực hiện xong chương trình
 
->Heap: Không bị hủy khi hàm thực hiện xong, sử dụng free (trong C), delete hoặc delete[] (trong C++) để giải phóng bộ nhớ
+>Heap: Không bị hủy khi hàm thực hiện xong, sử dụng **free (trong C), delete hoặc delete[] (trong C++)** để giải phóng bộ nhớ
+
+**Cú pháp sử dụng cấp phát bộ nhớ động**
+
+```sh
+**<kiểu_dữ_liệu> *<tên_con_trỏ> = (kiểu_dữ_liệu *) malloc(kích thước);**
+```
+
+**Trong đó:**
+
+``` sh
+
+- <kiểu_dữ_liệu> là kiểu dữ liệu mà con trỏ sẽ trỏ tới (ví dụ: **int, float, struct,...**)
+
+- <tên_con_trỏ> là tên co trỏ được khai báo
+
+- <kích_thước> là số byte cần cấp cho con trỏ (ví dụ: **uint8_t,...)
+
+**<kiểu_dữ_liệu> *<tên_con_trỏ> = (kiểu_dữ_liệu*) realloc(<con_trỏ_cũ>, kích_thước_mới);**
+```
+
+# MACRO FUNTION
+
 
 
