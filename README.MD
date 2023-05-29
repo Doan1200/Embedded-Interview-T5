@@ -272,17 +272,17 @@ Về mặt cơ bản thì struct và union giống nhau. Tuy nhiên, về mặt 
 
 # STATIC
 
-**1. Biến Static toàn cục**
+**1. Biến Static cục bộ**
 
 >Biến khởi tạo 1 lần và tồn tại suốt thời gian chạy chương trình.
 
 >Giá trị không mất đi ngay cả khi kết thúc hàm
 
->Có thể gọi mọi nơi trong chương trình
+>Chỉ có thể được gọi trong hàm tạo ra nó
 
 >Mỗi lần được gọi, **giá trị** của biến **bằng** giá trị tại lần gần nhất hàm được gọi
 
-**2. Biến Static cục bộ**
+**2. Biến Static toàn bộ**
 
 >**Chỉ** có thể truy cập và sử dụng trong file khai báo nó, các file khác **không** truy cập được
 
