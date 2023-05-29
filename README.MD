@@ -286,6 +286,8 @@ Về mặt cơ bản thì struct và union giống nhau. Tuy nhiên, về mặt 
 
 >**Chỉ** có thể truy cập và sử dụng trong file khai báo nó, các file khác **không** truy cập được
 
+## Extern
+
 Có thể sử dụng lệnh Extern để gọi hàm hoặc biến từ file khác qua (trừ biến static)
 
 **Ví dụ:**
@@ -317,11 +319,57 @@ int main()
 }
 ```
 
-Sau khi sử dụng **extern** ta có thể sử dụng biến hoặc hàm đó trong hàm main
-
-
-
 # POINTER
+
+
+**1. Con trỏ NULL**
+
+>Khi sử dụng con trỏ phải gán nó vào một địa chỉ hoặc địa chỉ **NULL**
+>Khi không sử dụng nữa phải trả về **NULL**
+
+**2. Con trỏ hàm**
+
+>Là 1 kiểu dữ liệu đặc biệt cho phép **lưu địa chỉ hàm** và có thể gọi hàm thông qua con trỏ đó
+
+**Cú pháp**
+
+``` cpp
+<Kiểu_dữ_liệu_trả_về> (*Con_trỏ) (Input_parameter) = <Địa_chỉ_hàm>
+
+int (*ptr)(int, int) = tong;
+```
+
+**Ví dụ:**
+
+``` cpp
+#include<stdio.h>
+
+void tong(int a, int b)
+{
+    return a + b;
+}
+
+int main(int argc, const char* argv[])
+{
+    void (*ptr)(int, int) = NULL;
+
+    ptr = &tong;
+
+    ptr(6, 7);
+    return 0;
+}
+```
+
+**3. Con trỏ Void**
+
+>Con trỏ void có thể trỏ đến bất kì kiểu dữ liệu nào, nhưng không thể lấy được giá trị
+
+>Khi muốn lấy giá trị thì ta phải ép kiểu dữ liệu tương ứng
+
+
+
+**4. Pointer to Pointer**
+
 
 
 
