@@ -1,3 +1,4 @@
 # COMPILER
 
-<img src = "Screenshot 2023-05-29 221531.png">
+<img src = "https://tapit.vn/wp-content/uploads/2017/07/GCC_CompilationProcess.png">
+
