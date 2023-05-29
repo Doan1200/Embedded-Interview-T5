@@ -256,6 +256,20 @@ unsigned char b = a << 5;    // 10100000
 unsigned char a = 5;         // 00000101
 unsigned char b = a >> 2;    // 00000001
 ```
+# STRUCT & UNION
+
+## I. Định nghĩa
+
+>Struct và unino: là một kiểu dữ liệu do người dùng từ định nghĩa
+
+## II. So sánh
+
+Về mặt cơ bản thì struct và union giống nhau. Tuy nhiên, về mặt **lưu trữ** trong bộ nhớ lại khác nhau:
+
+>- Struct: Dữ liệu các member được lưu trữ ở **vùng nhớ khác nhau**. Kích thước **tối thiểu** sẽ bằng tổng các member cộng lại vì còn phụ thuộc vào bộ nhớ đệm (struct padding)
+
+>- Union: Dữ liệu các member dùng **chung** 1 vùng nhớ. Kích thước của union **bằng với kích thước của member lớn nhất**. Giá trị của union bằng với giá trị của lần thay đổi gần nhất
+
 
 
 
