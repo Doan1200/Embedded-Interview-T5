@@ -64,7 +64,7 @@ Giai đoạn này sẽ thực hiện:
 <img src= "https://lh4.googleusercontent.com/OdFcHDJs5fihfwLpauohyVVnneoZTIl5cTT9vJe-lVrLlip8BvYm3FU7SMgY7b5O27YyBNhlnecLC6bNV5iUTvIdC8H8Wo9gBxBVorFx2DarPgwQAf5FvfCKjLbt3Di1GXKSfJps">
 
 
-## Vùng nhớ
+## I. Vùng nhớ
 
 - **Text**:
 
@@ -125,7 +125,7 @@ Giai đoạn này sẽ thực hiện:
 
 >Heap: Không bị hủy khi hàm thực hiện xong, sử dụng **free (trong C), delete hoặc delete[] (trong C++)** để giải phóng bộ nhớ
 
-## Cú pháp sử dụng cấp phát bộ nhớ động
+## II. Cú pháp sử dụng cấp phát bộ nhớ động
 
 ``` sh
 <kiểu_dữ_liệu> *<tên_con_trỏ> = (kiểu_dữ_liệu *) malloc(kích thước);
