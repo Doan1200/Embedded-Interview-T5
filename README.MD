@@ -270,6 +270,27 @@ Về mặt cơ bản thì struct và union giống nhau. Tuy nhiên, về mặt 
 
 >- Union: Dữ liệu các member dùng **chung** 1 vùng nhớ. Kích thước của union **bằng với kích thước của member lớn nhất**. Giá trị của union bằng với giá trị của lần thay đổi gần nhất
 
+# STATIC
+
+**1. Biến Static toàn cục**
+
+>Biến khởi tạo 1 lần và tồn tại suốt thời gian chạy chương trình.
+
+>Giá trị không mất đi ngay cả khi kết thúc hàm
+
+>Có thể gọi mọi nơi trong chương trình
+
+>Mỗi lần được gọi, **giá trị** của biến **bằng** giá trị tại lần gần nhất hàm được gọi
+
+**2. Biến Static cục bộ**
+
+>**Chỉ** có thể truy cập và sử dụng trong file khai báo nó, các file khác **không** truy cập được
+
+
+
+# POINTER
+
+
 
 
 
