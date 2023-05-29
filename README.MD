@@ -180,7 +180,7 @@ ptr = (uint8_t*)realloc(ptr, sizeof(uint8_t)*7);
 
  >**OR:** Ký hiệu "|" tương tự phép cộng
 
- >**XOR:** Ký hiệu "^" Bit **a = b == 1** bit **a!= b == 1**
+ >**XOR:** Ký hiệu "^" Bit **a = b == 0** bit **a!= b == 1**
 
 **Ví dụ:**
 
@@ -193,12 +193,23 @@ ptr = (uint8_t*)realloc(ptr, sizeof(uint8_t)*7);
 | 1 | 0 |  0  |
 | 1 | 1 |  1  |
 
+``` sh
+unsigned char a = 5;         // 00000101
+unsigned char b = 6;         // 00000110
+unsigned char c = a & b;     // 00000100
+```
+
 - **NOT**
 
 | A | ~A |
 |---|-----|
 | 0 |  1  |
 | 1 |  0  |
+
+``` sh
+unsigned char a = 5;         // 00000101
+unsigned char b = ~a;        // 11111010
+```
 
 - **OR**
 
@@ -209,6 +220,12 @@ ptr = (uint8_t*)realloc(ptr, sizeof(uint8_t)*7);
 | 1 | 0 |  1  |
 | 1 | 1 |  1  |
 
+```sh
+unsigned char a = 5;         // 00000101
+unsigned char b = 6;         // 00000110
+unsigned char c = a | b;     // 00000111
+```
+
 - **XOR**
 
 | A | B | A&B |
@@ -218,12 +235,27 @@ ptr = (uint8_t*)realloc(ptr, sizeof(uint8_t)*7);
 | 1 | 0 |  0  |
 | 1 | 1 |  1  |
 
+```sh
+unsigned char a = 5;         // 00000101
+unsigned char b = 6;         // 00000110
+unsigned char c = a | b;     // 00000011
+```
+
 **Dịch bit**
 
 >Dịch trái: <<
 
+``` sh
+unsigned char a = 5;         // 00000101
+unsigned char b = a << 5;    // 10100000
+```
+
 >Dịch phải: >>
 
+``` sh
+unsigned char a = 5;         // 00000101
+unsigned char b = a >> 2;    // 00000001
+```
 
 
 
