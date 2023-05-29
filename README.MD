@@ -158,6 +158,24 @@ ptr = (uint8_t*)realloc(ptr, sizeof(uint8_t)*7);
 
 # MACRO FUNTION
 
+## I. ĐỊNH NGHĨA
+
+>Diễn ra ở quá trình tiền xử lý
+
+>**Bản chất của Macro:** Thay thế, định nghĩa vào đoạn code mà chúng ta gọi
+
+**Lưu ý:**
+
+>Size của macro **lớn**, bởi vì mỗi quá trình gọi Macro thì nó sẽ tạo ra 1 hàm
+
+>Tuy nhiên tốc độ xử lý của Macro lại **nhanh**
+
+>Ngược lại thì khi sử dụng hàm thì kích thước **nhỏ** và tốc độ xử lý **thấp**
+
+
+# THAO TÁC BIT
+
+
 
 
 
