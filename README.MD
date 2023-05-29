@@ -65,13 +65,51 @@ Giai đoạn này sẽ thực hiện:
 
 - **Text**:
 
-    - Quyền truy cập: `Read`
+    - Quyền truy cập: **Read** và nó chưa lệnh để thực thi nên tránh sửa đổi instruction
 
-    - Chứa khai báo `hằng số` trong chương trình (.rodata)
+    - Chứa khai báo **hằng** số trong chương trình (.rodata)
 
 - **DATA**
 
-    - Quyền truy cập: `Read - Write`
+    - Quyền truy cập: **Read - Write**
+
+    - Chứa biến **toàn cục or static != 0**
+
+    - Được giải phóng khi kết thúc chương trình
+
+- **BSS**
+
+    - Quyền truy cập: **Read - Write**
+
+    - Chứa biến **toàn cục or static == 0**
+
+    - Được giải phóng khi kết thúc chương trình
+
+- **Stack**
+
+    - Quyền truy cập: **Read - Write**
+
+    - Được sử dụng cấp phát cho **biến local, input parameter của hàm,..**
+
+    - Được giải phóng khi ra khỏi block code/ hàm
+
+- **HEAP**
+
+    - Quyền truy cập: **Read - Write**
+
+    - Được dùng để cấp phát bộ nhớ động Malloc, Calloc,...
+
+    - Được giải phóng khi được gọi hàm **free,...**
+
+**Stack và Heap**
+
+>Bộ nhớ Heap và Stack bản chất đều cùng là vùng nhớ được tạo ra và lưu trữ trong RAM khi chương trình được thực thi
+
+>Bộ nhớ **Stack** được dùng để lưu biến **cục bộ trong hàm, tham số truyền vào,...** Truy cập vào bộ nhớ này **rất nhanh** và được thực thi khi chương trình được biên dịch
+
+>Bộ nhớ **Heap** được dùng để lưu trũ vùng nhớ cho những biến con trỏ được **cấp phát động** bởi các hàm Malloc, Calloc, Realloc (Trong C)
+
+
 
 
 
