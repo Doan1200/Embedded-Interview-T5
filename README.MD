@@ -346,7 +346,13 @@ int (*ptr)(int, int) = tong;
 
 void tong(int a, int b)
 {
-    return a + b;
+    printf("Tong cua %d va %d = %d\n", a, b, a + b);
+}
+
+void phepToan(int a, int b, void (*ptr)(int, int))
+{
+    printf("Chương trình toán:");
+    ptr(a, b);
 }
 
 int main(int argc, const char* argv[])
@@ -369,6 +375,11 @@ int main(int argc, const char* argv[])
 **Ví dụ**
 
 ``` cpp
+void tong(int a, int b)
+{
+    printf("Tong cua %d va %d = %d\n", a, b, a + b);
+}
+
 int main(int argc, const char* argv[])
 {
     int i = 5;
@@ -383,11 +394,15 @@ int main(int argc, const char* argv[])
 
     ptr = &d;
 
-    printf("i = %d\n", *(double *)ptr);
+    printf("i = %f\n", *(double *)ptr);
 
     ptr = &c;
 
-    printf("i = %d\n", *(char *)ptr);
+    printf("i = %c\n", *(char *)ptr);
+
+    ptr = &tong;
+
+    (void (*)(int, int)ptr(8, 7));  // Chuyển từ con trỏ void sang con trỏ hàm
 
     return 0;
 }
@@ -396,7 +411,15 @@ int main(int argc, const char* argv[])
 
 **4. Pointer to Pointer**
 
+>Giá trị của nó là địa chỉ của một địa chỉ của một con trỏ khác
 
+**Ví dụ**
+
+``` cpp
+int number = 10;
+int* ptr = &number;
+int** ptr2 = &ptr;
+``` 
 
 
 
