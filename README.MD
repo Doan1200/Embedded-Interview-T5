@@ -1,4 +1,4 @@
-                # COMPILER
+# COMPILER
 
 ## I. Định nghĩa
 
@@ -59,8 +59,19 @@ Giai đoạn này sẽ thực hiện:
 
 - Kết thúc quá trình tất cả đối tượng liên kết lại với nhau thành một chương trình có thể thực thi được (.exe).
 
-
 # PHÂN VÙNG NHỚ
+
+<img src= "https://lh4.googleusercontent.com/OdFcHDJs5fihfwLpauohyVVnneoZTIl5cTT9vJe-lVrLlip8BvYm3FU7SMgY7b5O27YyBNhlnecLC6bNV5iUTvIdC8H8Wo9gBxBVorFx2DarPgwQAf5FvfCKjLbt3Di1GXKSfJps">
+
+- **Text**:
+
+    - Quyền truy cập: `Read`
+
+    - Chứa khai báo `hằng số` trong chương trình (.rodata)
+
+- **DATA**
+
+    - Quyền truy cập: `Read - Write`
 
 
 
