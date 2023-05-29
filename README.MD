@@ -16,6 +16,17 @@ Compiler là quá trình chuyển đổi từ ngôn ngữ bậc cao sang ngôn n
 
 <img src = "https://tapit.vn/wp-content/uploads/2017/07/GCC_CompilationProcess.png">
 
+>Code xem file main.i: gcc -E main.c -o main.i
+
+>Code xem file main.s: gcc main.i -s -o main.s
+
+>ASSEMBLY CODE: Học codde này mới có thể viết được hệ điều hành RTOS
+
+>Ngôn ngữ C: Thao tác với thanh ghi, lấy data từ thanh ghi và ghi data vào thanh ghi đó
+
+>Assembly: Có thể chuyển từ địa chỉ này sang địa chỉ khác có thể quản lý bộ nhớ
+
+
 ## II. Hoạt động
 
 **1. Giai đoạn tiền xử lý - Preprocessor**
