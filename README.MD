@@ -158,7 +158,7 @@ ptr = (uint8_t*)realloc(ptr, sizeof(uint8_t)*7);
 
 # MACRO FUNTION
 
-## I. ĐỊNH NGHĨA
+## ĐỊNH NGHĨA
 
 >Diễn ra ở quá trình tiền xử lý
 
@@ -172,9 +172,21 @@ ptr = (uint8_t*)realloc(ptr, sizeof(uint8_t)*7);
 
 >Ngược lại thì khi sử dụng hàm thì kích thước **nhỏ** và tốc độ xử lý **thấp**
 
-
 # THAO TÁC BIT
 
+ >**AND:** Ký hiệu "&" tương tự phép nhân
+
+ >**NOT:** Ký hiệu "~" Đảo ngược bit
+
+ >**OR:** Ký hiệu "|" tương tự phép cộng
+
+ >**XOR:** Ký hiệu "^" Bit **a = b == 1** bit **a!= b == 1**
+
+**Dịch bit**
+
+>Dịch trái: <<
+
+>Dịch phải: >>
 
 
 
