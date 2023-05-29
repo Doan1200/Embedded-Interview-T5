@@ -286,6 +286,39 @@ Về mặt cơ bản thì struct và union giống nhau. Tuy nhiên, về mặt 
 
 >**Chỉ** có thể truy cập và sử dụng trong file khai báo nó, các file khác **không** truy cập được
 
+Có thể sử dụng lệnh Extern để gọi hàm hoặc biến từ file khác qua (trừ biến static)
+
+**Ví dụ:**
+
+**File test.c**
+
+``` sh
+#include <stdio.h>
+int count = 5;
+
+void hienThi()
+{
+    printf("This is a test");
+}
+```
+
+**Thực hiện Extern qua file main.c**
+
+``` sh
+#include<stdio.h>
+extern int count;
+extern void hienThi();
+
+int main()
+{
+    printf("Count = %d\n", count);
+    hienThi();
+    return 0;
+}
+```
+
+Sau khi sử dụng **extern** ta có thể sử dụng biến hoặc hàm đó trong hàm main
+
 
 
 # POINTER
