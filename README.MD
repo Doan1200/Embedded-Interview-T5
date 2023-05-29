@@ -127,12 +127,12 @@ Giai đoạn này sẽ thực hiện:
 
 ## II. Cú pháp sử dụng cấp phát bộ nhớ động
 
-``` sh
+``` cpp
 <kiểu_dữ_liệu> *<tên_con_trỏ> = (kiểu_dữ_liệu *) malloc(kích thước);
 ```
 ***Ví dụ:***
 
-``` sh
+``` cpp
 uint8_t *ptr = (uint8_t *) malloc(sizeof(uint8_t)*5);
 ```
 
@@ -146,13 +146,13 @@ uint8_t *ptr = (uint8_t *) malloc(sizeof(uint8_t)*5);
 
 **Để thay đổi kích thước mảng ta sử dụng Realloc**
 
-``` sh
+``` cpp
 <tên_con_trỏ> = (kiểu_dữ_liệu*) realloc(<con_trỏ_cũ>, kích_thước_mới);
 ```
 
 ***Ví dụ:***
 
-``` sh
+``` cpp
 ptr = (uint8_t*)realloc(ptr, sizeof(uint8_t)*7);
 ```
 
@@ -193,7 +193,7 @@ ptr = (uint8_t*)realloc(ptr, sizeof(uint8_t)*7);
 | 1 | 0 |  0  |
 | 1 | 1 |  1  |
 
-``` sh
+``` cpp
 unsigned char a = 5;         // 00000101
 unsigned char b = 6;         // 00000110
 unsigned char c = a & b;     // 00000100
@@ -206,7 +206,7 @@ unsigned char c = a & b;     // 00000100
 | 0 |  1  |
 | 1 |  0  |
 
-``` sh
+``` cpp
 unsigned char a = 5;         // 00000101
 unsigned char b = ~a;        // 11111010
 ```
@@ -220,7 +220,7 @@ unsigned char b = ~a;        // 11111010
 | 1 | 0 |  1  |
 | 1 | 1 |  1  |
 
-```sh
+```cpp
 unsigned char a = 5;         // 00000101
 unsigned char b = 6;         // 00000110
 unsigned char c = a | b;     // 00000111
@@ -235,7 +235,7 @@ unsigned char c = a | b;     // 00000111
 | 1 | 0 |  0  |
 | 1 | 1 |  1  |
 
-```sh
+```cpp
 unsigned char a = 5;         // 00000101
 unsigned char b = 6;         // 00000110
 unsigned char c = a | b;     // 00000011
@@ -245,14 +245,14 @@ unsigned char c = a | b;     // 00000011
 
 >Dịch trái: <<
 
-``` sh
+``` cpp
 unsigned char a = 5;         // 00000101
 unsigned char b = a << 5;    // 10100000
 ```
 
 >Dịch phải: >>
 
-``` sh
+``` cpp
 unsigned char a = 5;         // 00000101
 unsigned char b = a >> 2;    // 00000001
 ```
@@ -292,7 +292,7 @@ Có thể sử dụng lệnh Extern để gọi hàm hoặc biến từ file kh�
 
 **File test.c**
 
-``` sh
+``` cpp
 #include <stdio.h>
 int count = 5;
 
@@ -304,7 +304,7 @@ void hienThi()
 
 **Thực hiện Extern qua file main.c**
 
-``` sh
+``` cpp
 #include<stdio.h>
 extern int count;
 extern void hienThi();
