@@ -1,4 +1,4 @@
-# COMPILER
+                # COMPILER
 
 ## I. Định nghĩa
 
@@ -16,13 +16,13 @@ Compiler là quá trình chuyển đổi từ ngôn ngữ bậc cao sang ngôn n
 
 <img src = "https://tapit.vn/wp-content/uploads/2017/07/GCC_CompilationProcess.png">
 
->Code xem file main.i: gcc -E main.c -o main.i
+>Code xem file main.i: **gcc -E main.c -o main.i**
 
->Code xem file main.s: gcc main.i -s -o main.s
+>Code xem file main.s: **gcc main.i -s -o main.s**
 
 >ASSEMBLY CODE: Học codde này mới có thể viết được hệ điều hành RTOS
 
->Ngôn ngữ C: Thao tác với thanh ghi, lấy data từ thanh ghi và ghi data vào thanh ghi đó
+>Ngôn ngữ C: **Thao tác** với thanh ghi, lấy data từ thanh ghi và ghi data vào thanh ghi đó
 
 >Assembly: Có thể chuyển từ địa chỉ này sang địa chỉ khác có thể quản lý bộ nhớ
 
@@ -58,6 +58,9 @@ Giai đoạn này sẽ thực hiện:
 - Trong giai đoạn này mã máy của một chương trình dịch từ nhiều nguồn **(file.c hoặc thư viện .lib)** **liên kết** lại tạo thành một chương trình đích duy nhất.
 
 - Kết thúc quá trình tất cả đối tượng liên kết lại với nhau thành một chương trình có thể thực thi được (.exe).
+
+
+# PHÂN VÙNG NHỚ
 
 
 
