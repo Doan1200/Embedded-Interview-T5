@@ -127,7 +127,11 @@ Giai đoạn này sẽ thực hiện:
 ``` sh
 <kiểu_dữ_liệu> *<tên_con_trỏ> = (kiểu_dữ_liệu *) malloc(kích thước);
 ```
+***Ví dụ:***
 
+``` sh
+uint8_t *ptr = (uint8_t *) malloc(sizeof(uint8_t)*5);
+```
 
 >**Trong đó:**
 
@@ -137,8 +141,16 @@ Giai đoạn này sẽ thực hiện:
 
 >**<kích_thước>** là số byte cần cấp cho con trỏ (Ví dụ: **uint8_t,...**)
 
+**Để thay đổi kích thước mảng ta sử dụng Realloc**
+
 ``` sh
-<kiểu_dữ_liệu> *<tên_con_trỏ> = (kiểu_dữ_liệu*) realloc(<con_trỏ_cũ>, kích_thước_mới);
+<tên_con_trỏ> = (kiểu_dữ_liệu*) realloc(<con_trỏ_cũ>, kích_thước_mới);
+```
+
+***Ví dụ:***
+
+``` sh
+ptr = (uint8_t*)realloc(ptr, sizeof(uint8_t)*7);
 ```
 
 # MACRO FUNTION
