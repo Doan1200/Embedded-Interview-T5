@@ -128,11 +128,11 @@ Giai đoạn này sẽ thực hiện:
 
 >**Trong đó:**
 
-><kiểu_dữ_liệu> là kiểu dữ liệu mà con trỏ sẽ trỏ tới (ví dụ: **int, float, struct,...**)
+><kiểu_dữ_liệu> là kiểu dữ liệu mà con trỏ sẽ trỏ tới (Ví dụ: **int, float,...**)
 
 ><tên_con_trỏ> là tên co trỏ được khai báo
 
-><kích_thước> là số byte cần cấp cho con trỏ (ví dụ: **uint8_t,...)
+><kích_thước> là số byte cần cấp cho con trỏ (Ví dụ: **uint8_t,...**)
 
 `**<kiểu_dữ_liệu> *<tên_con_trỏ> = (kiểu_dữ_liệu*) realloc(<con_trỏ_cũ>, kích_thước_mới);**`
 
