@@ -1,7 +1,3 @@
 # COMPILER
 
-> **SOUCRE FILE(* .c /* .h)** --> *Tiền xử lý
-> (PREPROCESSOR)* --> **PREPROCESSED SOURCE(* .i)** > --> *COMPILER* --> **ASSEMBLY CODE(* /.s)** --> 
-> *ASSEMBLER* --> **OBJECT FILES(* .o) + 
-> LIBRARIES**  --> *LINKER*  --> **EXECUTABLE (*.
-> exe).**
+<img src = "Screenshot 2023-05-29 221531.png">
