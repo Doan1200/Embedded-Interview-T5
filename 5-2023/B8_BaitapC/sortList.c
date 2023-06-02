@@ -2,6 +2,7 @@
 #include<stdint.h>
 
 
+
 void sortList(uint8_t arr[], int n)
 {
     int i, j;
@@ -37,9 +38,9 @@ void kiemTra(uint8_t arr[], int size, int number)
 }
 
 
-void nhapNumber(uint8_t* number)
+
+void nhap(int* number)
 {
     printf("\nNhap so can check: ");
-
     scanf("%d", number);
 }
