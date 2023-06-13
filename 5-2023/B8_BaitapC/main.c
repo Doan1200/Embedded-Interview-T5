@@ -74,20 +74,20 @@ bool isEqual(const char arr1[], const char arr2[])
 int main(int argc, const char *argv[])
 {
 
-    // uint8_t arr[] = {1, 3, 5, 2, 3, 4, 5, 6, 2, 6, 9, 6, 7};
-    // uint8_t size = sizeof(arr) / sizeof(arr[0]);
+    uint8_t arr[] = {1, 3, 5, 2, 3, 4, 5, 6, 2, 6, 9, 6, 7};
+    uint8_t size = sizeof(arr) / sizeof(arr[0]);
 
-    // printf("Mang sau khi sap xep: ");
-    // sortList(arr, size);
-    // printfMang(arr, size);
+    printf("Mang sau khi sap xep: ");
+    sortList(arr, size);
+    printfMang(arr, size);
 
-    // printf("\nMang sau khi dao: ");
-    // daoNguocMang(arr, size);
-    // printfMang(arr, size);
+    printf("\nMang sau khi dao: ");
+    daoNguocMang(arr, size);
+    printfMang(arr, size);
 
-    // int number;
-    // nhap(&number);
-    // kiemTra(arr, size, number);
+    int number;
+    nhap(&number);
+    kiemTra(arr, size, number);
 
     return 0;
 }

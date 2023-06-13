@@ -40,6 +40,7 @@ int main()
     int ngay, thang, nam;
 
     printf("Nhap vao ngay, thang, nam: ");
+
     scanf("%d %d %d", &ngay, &thang, &nam);
 
     char *arrNgay[7] = {"Chu nhat", "Thu hai", "Thu ba", "Thu tu", "Thu nam", "Thu sau", "Thu bay"};
