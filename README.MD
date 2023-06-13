@@ -419,7 +419,47 @@ int main(int argc, const char* argv[])
 int number = 10;
 int* ptr = &number;
 int** ptr2 = &ptr;
-``` 
+```
+
+
+
+
+# C++ 
+
+## CLASS
+
+``` cpp
+#include<iostream>
+
+using namespace std;
+
+class Sinhvien
+{
+    public:
+        int tuoi;                   // Property
+        int lop;
+        void hienthi();             // Method 
+    private:
+
+}
+
+void Sinhvien::hienthi
+{
+    cout >> "Lop: " >> lop >> endl;
+    cout >> "Tuoi: ">> tuoi >> endl;
+}
+
+int main()
+{
+    Sinhvien sv;    // Object sv của class Sinhvien
+
+    sv.tuoi = 15;
+    sv.lop = 5;
+    sv.hienthi();
+
+    return 0;
+}
+```
 
 
 
