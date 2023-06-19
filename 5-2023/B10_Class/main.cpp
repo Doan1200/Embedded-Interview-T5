@@ -1,106 +1,60 @@
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <math.h>
 
 using namespace std;
 
-
-class Doituong
-{
-    public:
-        void hienthi();
-        void setThongTin(int tuoi, string name);
-
-    protected:
-        int TUOI;
-        string NAME;
-};
-
-void Doituong::setThongTin(int tuoi, string name)
-{
-    TUOI = tuoi;
-    NAME = name;
-}
-
-
-
-void Doituong::hienthi()
-{
-    cout << "Day la class Doi tuong" << endl;
-    cout << "Tuoi = " << TUOI << endl;
-    cout << "Name = " << NAME << endl;
-}
-
-
-class Sinhvien : public Doituong
-{
-    public:
-        void setThongTin(int tuoi, string name, int mssv);
-        void hienthi();
-    protected:
-        int MSSV;
-
-};
-
-
-void Sinhvien::setThongTin(int tuoi, string name, int mssv)
-{
-    TUOI = tuoi;
-    NAME = name;
-    MSSV = mssv;
-}
-
-
-void Sinhvien::hienthi()
-{
-    cout << "Day la class Sinh vien" << endl;
-    cout << "Tuoi = " << TUOI << endl;
-    cout << "Name = " << NAME << endl;
-    cout << "MSSV = " << MSSV << endl;
-}
-
-
-class Cetificate : public Sinhvien
-{
-    public:
-        void setThongTin(int tuoi, string name, int mssv, string cetificate);
-        void hienthi();
-    private:
-        string CETIFICATE;
-};
-
-
-void Cetificate::setThongTin(int tuoi, string name, int mssv, string cetificate)
-{
-    TUOI = tuoi;
-    NAME = name;
-    MSSV = mssv;
-    CETIFICATE = cetificate;
-}
-
-
-void Cetificate::hienthi()
-{
-    cout << "Day la class Cetificate" << endl;
-    cout << "Tuoi = " << TUOI << endl;
-    cout << "Name = " << NAME << endl;
-    cout << "MSSV = " << MSSV << endl;
-    cout << "CTFC = " << CETIFICATE << endl;
-}
-
-
 int main()
 {
-    Doituong dt;
-    dt.setThongTin(23, "Doan");
-    dt.hienthi();
+    int n;
+    cout << "Nhap vao n: ";
+    cin >> n;
 
-    Sinhvien sv;
-    sv.setThongTin(23, "Doan", 1811252308);
-    sv.hienthi();
+    for (int i = 1; i <= n; i++)
+    {
+        if (i % 2 == 0)
+        {
+            cout << " " << i;
+        }
+    }
+    cout << endl;
+    float tong = 0;
 
-    Cetificate ct;
-    ct.setThongTin(23, "Doan", 1811252308, "Good");
-    ct.hienthi();
+    for (int i = 1; i <= n; i++)
+    {
+        if (i % 3 == 0 && i % 5 == 0)
+        {
+            tong += i;
+        }
+    }
+    cout << "Tong = " << tong << endl;
+    cout << endl;
+
+    // KIEM TRA SO NGUYEN TO
+
+    bool laSoNguyenTo = true;
+
+    if (n < 2)
+    {
+        laSoNguyenTo = false;
+    }
+    else
+    {
+        for (int i = 2; i <= sqrt(n); i++)
+        {
+            if (n % i == 0)
+                laSoNguyenTo = false;
+                break;
+        }
+    }
+
+    if (laSoNguyenTo)
+    {
+        cout << "Day la so nguyen to" << endl;
+    }
+    else
+    {
+        cout << "Day khong phai la so nguyen to" << endl;
+    }
 
     return 0;
 }

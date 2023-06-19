@@ -462,6 +462,50 @@ int main()
 ```
 
 
+# OOP
+
+**Tính trừu tượng**
+
+>Public là cho người dùng sử dụng
+
+> Property khai báo ở private 
+
+
+**Tính đóng gói**
+
+>Property khai báo ở private
+
+>Khi gán hoặc lấy ra ta sử dụng các method
+
+> Nhằm tránh trường hợp làm sai kết quả không như mong muốn
+
+**Cách sử dụng template**
+
+> Cú pháp:
+
+``` cpp
+    template <typename var>
+```
+
+> Template dùng để định nghĩa tên biến tự động
+
+> Có nghĩa là khi ta nhập dữ liệu là *int* thì kiểu dữ liệu var sẽ là *int*
+
+# VECTOR
+
+**Cấu trúc**
+
+``` cpp
+Vector<int> array;
+array.push_back(4);  // Cấp phát bộ nhớ có kích thước bằng 4
+array.push_back(5); // Cấp phát bộ nhớ có kích thước bằng 5
+array.pop_back();   // Xóa phần tử cuối cùng của mảng
+array.insert(array.begin()+2, 77); // Chèn vào phần tử ban đầu + 2 và gán giá trị bằng 77
+array.clear();  // Xóa cấp phát bộ nhớ, thu hồi vùng nhớ;
+array.erase(array.begin() + 2); // Xóa vị trí thứ 2
+array.assign(8, 4); // Tạo ra mảng 8 phần tử, mỗi phần tử có 4 ô nhớ
+```
+
 
 
 
