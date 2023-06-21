@@ -464,20 +464,30 @@ int main()
 
 # OOP
 
-**Tính trừu tượng**
+## Tính trừu tượng
 
->Public là cho người dùng sử dụng
+> Có nghĩa là nó thể hiện các thông tin mà người sử dụng cần ở public
 
-> Property khai báo ở private 
+> Các quá trình thực hiện thì được đặt ở private
 
+## Tính đóng gói
 
-**Tính đóng gói**
+> Property chỉ khai báo ở private không khai báo ở public
 
->Property khai báo ở private
+> Không cho phép lấy trực tiếp 
 
->Khi gán hoặc lấy ra ta sử dụng các method
+> Khi gán hoặc lấy ra ta sử dụng các method
 
 > Nhằm tránh trường hợp làm sai kết quả không như mong muốn
+
+## Tính đa hình 
+
+> Ta có thể sử dụng chung một tên hàm nhiều lần, sự khác biệt trong nó là parameter 
+
+## Tính kế thừa
+
+> Kế thừa từ 1 class đã, được gọi là class con, còn class kế thừa là class cha
+
 
 **Cách sử dụng template**
 
@@ -487,9 +497,13 @@ int main()
     template <typename var>
 ```
 
-> Template dùng để định nghĩa tên biến tự động
+- Template dùng để định nghĩa tên biến tự động
 
-> Có nghĩa là khi ta nhập dữ liệu là *int* thì kiểu dữ liệu var sẽ là *int*
+- Có nghĩa là khi ta nhập dữ liệu là *int* thì kiểu dữ liệu var sẽ là *int*
+
+## Cách sử dụng NAMESPACE
+
+
 
 # VECTOR
 
