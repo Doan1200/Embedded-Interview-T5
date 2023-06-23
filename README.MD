@@ -428,6 +428,20 @@ int** ptr2 = &ptr;
 
 ## CLASS
 
+**Class là gì**
+
+> Cấu trúc của Class gồm tên Class và Object
+
+> Tương tự như struct đều là một kiểu dữ liệu do người dùng tự định nghĩa
+
+> Gồm có phạm vi truy cập, method, property
+
+> - Phạm vi truy cập gồm: Public, Private và Protected
+
+> - Property tương tự như biến
+
+> Method tương tự như hàm
+
 ``` cpp
 #include<iostream>
 
@@ -512,11 +526,17 @@ int main()
 ``` cpp
 Vector<int> array;
 array.push_back(4);  // Cấp phát bộ nhớ có kích thước bằng 4
+
 array.push_back(5); // Cấp phát bộ nhớ có kích thước bằng 5
+
 array.pop_back();   // Xóa phần tử cuối cùng của mảng
+
 array.insert(array.begin()+2, 77); // Chèn vào phần tử ban đầu + 2 và gán giá trị bằng 77
+
 array.clear();  // Xóa cấp phát bộ nhớ, thu hồi vùng nhớ;
+
 array.erase(array.begin() + 2); // Xóa vị trí thứ 2
+
 array.assign(8, 4); // Tạo ra mảng 8 phần tử, mỗi phần tử có 4 ô nhớ
 ```
 
