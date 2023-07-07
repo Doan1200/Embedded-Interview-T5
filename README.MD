@@ -541,5 +541,65 @@ array.assign(8, 4); // Tạo ra mảng 8 phần tử, mỗi phần tử có 4 ô
 ```
 
 
+# KỸ THUẬT GỘP FILE HEADER VÀ SOUCRE
+
+## Cấu trúc
+
+**Ở file Header**
+
+>> Tương tự như thư viện file.h
+
+``` cpp
+#ifndef FILE_H
+#define FILE_H
+
+class file
+{
+    private:
+        //
+    public:
+        file();
+
+};
+
+#endif // FILE_H
+```
+
+**Ở file Source**
+
+>> Đối với file.cpp ta sẽ triển khai các hàm ở file.h ra
+
+``` cpp
+//Gọi file.h ra
+// Gỉa sử ta lưu file.h ở thư mục có tên là Header
+
+#include "../Header/file.h"
+
+file::file()
+{
+    //
+}
+```
+
+>> Đối với file main.cpp
+
+```cpp
+#include <iostream>
+#include "../Header/File.h"
+
+
+int main()
+{
+    file fi();
+
+    return 0;
+}
+```
+
+**Sau khi triển khai được các đoạn code trên thì ta tiến hành gộp file lại bằng cách sử dụng các câu lệnh sau:**
+
+>>Tạo file .exe tên là abc: `g++ -o abc main.cpp file.cpp`
+
+>>Sau đó ta chạy file abc bằng lệnh: `./abc`
 
 
