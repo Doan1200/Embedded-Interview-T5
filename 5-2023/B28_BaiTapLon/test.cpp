@@ -1,5 +1,5 @@
 #include <iostream>
-#include <vector>
+#include <list>
 using namespace std;
 
 struct MenuItem {
@@ -10,7 +10,7 @@ struct MenuItem {
 
 class Manager {
 private:
-    vector<MenuItem> menu;
+    list<MenuItem> menu;
 
 public:
     void addMenuItem();
