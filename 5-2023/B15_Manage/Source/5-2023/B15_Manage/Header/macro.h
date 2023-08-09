@@ -6,5 +6,8 @@
 using namespace std;
 
 #define CHOOSE_KEY(content) \
-    cout << content;        
+    cout << content;        \
+    cin >> number;          \
+    cin.ignore();
+
 #endif //

@@ -1,7 +1,3 @@
-/* Author: Tran Dinh Doan
-
-*/
-
 #ifndef DISH_H
 #define DISH_H
 #include <cstdint>
@@ -17,7 +13,6 @@ class dish
     public:
         // Constructor
         dish(string name, double price);
-        dish();
 
         // Setters
         void setName(string name);
