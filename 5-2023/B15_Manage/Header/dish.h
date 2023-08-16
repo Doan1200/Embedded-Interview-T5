@@ -25,8 +25,8 @@ class dish
 
         //Getters
         uint8_t getId();
-        string getName();
-        double getPrice();
+        string getName() const;
+        double getPrice() const;
 };
 
 #endif // FOOD_H

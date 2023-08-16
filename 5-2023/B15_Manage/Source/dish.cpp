@@ -28,12 +28,12 @@ uint8_t dish::getId()
     return this->id;
 }
 
-string dish::getName()
+string dish::getName() const
 {
     return this->name;
 }
 
-double dish::getPrice()
+double dish::getPrice() const
 {
     return this->price;
 }

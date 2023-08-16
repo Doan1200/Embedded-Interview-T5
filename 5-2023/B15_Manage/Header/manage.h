@@ -21,8 +21,9 @@ class manage
     public:
 
         manage();
-        void showOption();        
-        list<dish> getMenu();
+        void showOption();
+        void showMenu();
+        list<dish> getMenu() const;
         uint8_t getNumberTables();
 
 

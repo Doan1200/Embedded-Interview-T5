@@ -1,6 +1,7 @@
 #include "../Header/manage.h"
 #include "../Header/enum.h"
 #include <iostream>
+#include<string>
 // Constructor
 
 
@@ -37,7 +38,7 @@ void manage::addDish()
     }
 }
 
-// Getters
+
 
 
 
@@ -46,11 +47,30 @@ uint8_t manage::getNumberTables()
     return this->number_Tables;
 }
 
-list<dish> manage::getMenu()
+
+list<dish> manage::getMenu() const
 {
     return this->DATABASE;
 }
 
+
+
+void manage::showMenu()
+{
+    list<dish> menu = getMenu();
+
+    std::cout << std::string(30, '-') << std::endl;
+
+    std::cout << "-----------MENU-----------" << std::endl;
+    std::cout << "\tNAME\t\tPRICE" << std::endl;
+    std::cout << "" << std::endl;
+
+    for(const dish& d : menu)
+    {
+        std::cout << "\t" << d.getName() << "\t-\t" << d.getPrice() << std::endl;
+
+    }
+}
 
 
 
@@ -85,6 +105,9 @@ void manage::showOption()
         case DELETE_DISH:
 
         case DISPLAY_DISH:
+
+            showMenu();
+            break;
 
         case NUMBER_TABLES:
 
