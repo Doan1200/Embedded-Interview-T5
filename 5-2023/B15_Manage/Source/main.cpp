@@ -13,6 +13,8 @@ int main()
 {
     int choice;
     manage mn;
+    dish di;
+    
     while(1)
     {
         std::cout << "---------------------------------" << std::endl;

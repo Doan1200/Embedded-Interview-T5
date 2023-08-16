@@ -7,7 +7,10 @@ dish::dish(string name, double price)
     this->name = name;
     this->price = price;
 }
-dish::dish(){}
+dish::dish(){
+    this->id = 100;
+    id++;
+}
 
 // Setters
 
@@ -23,7 +26,7 @@ void dish::setPrice(double price)
 
 // Getters
 
-uint8_t dish::getId()
+uint8_t dish::getId() const
 {
     return this->id;
 }

@@ -12,13 +12,14 @@ manage::manage(){}
 
 void manage::addDish()
 {
+
     std::string name;
     int price;
     while (true)
     {
+        dish newDish;
         std::cout << "DISH NAME: ";
         std::getline(std::cin, name);
-        dish newDish;
         newDish.setName(name);
 
         std::cout << "DISH PRICE: ";
@@ -26,7 +27,6 @@ void manage::addDish()
         newDish.setPrice(price);
 
         DATABASE.push_back(newDish);
-
         int choice;
         std::cout << "Do you want to add another dish? (1/0): ";
         std::cin >> choice;
@@ -62,12 +62,12 @@ void manage::showMenu()
     std::cout << std::string(30, '-') << std::endl;
 
     std::cout << "-----------MENU-----------" << std::endl;
-    std::cout << "\tNAME\t\tPRICE" << std::endl;
-    std::cout << "" << std::endl;
+    std::cout << "\tID\tNAME\t\tPRICE" << std::endl;
+    std::cout << " " << std::endl;
 
     for(const dish& d : menu)
     {
-        std::cout << "\t" << d.getName() << "\t-\t" << d.getPrice() << std::endl;
+        std::cout << "\t" << d.getId() << "\t" << d.getName() << "\t-\t" << d.getPrice() << std::endl;
 
     }
 }

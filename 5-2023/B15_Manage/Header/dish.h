@@ -24,7 +24,7 @@ class dish
         void setPrice(double price);
 
         //Getters
-        uint8_t getId();
+        uint8_t getId() const;
         string getName() const;
         double getPrice() const;
 };
